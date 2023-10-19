@@ -1,12 +1,14 @@
 import './App.css'
-import Test from './components/Test'
+import HeaderBar from './components/HeaderBar'
+import Hero from './components/Hero'
 import Spacer from './components/Spacer'
 
 function App() {
 
   return (
     <div className="App">
-      <Test Speed={2} Size={100}></Test>
+      <HeaderBar />
+      <Hero></Hero>
       <Spacer></Spacer>
     </div>
   )

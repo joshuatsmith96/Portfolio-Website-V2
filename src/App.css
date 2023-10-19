@@ -1,28 +1,142 @@
-*{
-    padding: 0px;
-    margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans:ital,wght@1,600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.Hero{
-    position: relative;
-    height: 300px;
-    background-color: rgb(136, 212, 241);
-    transition: 1s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
+html{
+  scroll-behavior: smooth
 }
 
-.Spacer{
-    margin-bottom: 1000px;
+.Hero {
+  position: relative;
+  height: 300px;
+  background-color: #2a2a6d;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s;
 }
 
-#circle{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: black;
+.HeaderBar {
+  position: fixed;
+  width: 100%;
+  background-color: #2e3047;
+  top: 0px;
+  z-index: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderBar h3{
+  color: white;
+}
+
+.ghub{
+  float: right;
+  align-items: center;
+  background-image: url("./assets/Images/GitHub.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.gradient-text {
+  filter: contrast(1.5);
+  position: absolute;
+  top: 50px;
+  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-size: 90px;
+  /* Fallback: Set a background color. */
+  background-color: #42ca78;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    45deg,
+    #3bba9c 16.666%,
+    #329f86 16.666%,
+    #3bba9c 33.333%,
+    #1d5b4c 33.333%,
+    #3bba9c 50%,
+    #329f86 50%,
+    #3bba9c 66.666%,
+    #1d5b4c 66.666%,
+    #3bba9c 83.333%,
+    #329f86 83.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+
+.Spacer {
+  margin-bottom: 1000px;
+}
+
+/*----------- SHAPES ------------- */
+
+.Square {
+  position: absolute;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.Circle {
+  position: absolute;
+  border-radius: 100%;
+  background-color: white;
+  transition: 0.5s;
+  margin: 20px;
 }

@@ -44,15 +44,37 @@
   margin: 20px;
   border-radius: 20%;
   object-fit: contain;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
 .skills-container {
+  position: relative;
   display: grid;
   justify-content: space-around;
   align-items: center;
   grid-template-columns: auto auto auto;
+}
+
+#skills-message{
+  position: absolute;
+  border: solid;
+  background-color: #3EC2C4;
+  color: #3EC2C4;
+  top: 70px;
+  left: 35px;
+  width: 20px;
+}
+
+#skills-header{
+    text-align: center;
+    transition: .25s;
+    opacity: 1;
+}
+
+#skills-text{
+    text-align: center;
+    transition: .25s;
 }
 
 @media all and (min-width: 400px) {
@@ -86,7 +108,7 @@
 }
 
 @media all and (min-width: 1598px) {
-    .skillicon:hover{
-        padding: 5px;
-    }
+  .skillicon:hover {
+    padding: 5px;
+  }
 }

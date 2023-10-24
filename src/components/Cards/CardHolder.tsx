@@ -21,13 +21,13 @@ function CardHolder() {
       <div className="CardAlignment1">
       <HeaderCard />
       <Card
-        Title={"Experience"}
+        Title={"Work Experience"}
         Text={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nam ipsum et eius voluptatibus quasi? Labore tempore explicabo sit eum sequi mollitia ipsum? Ab temporibus, quae obcaecati vitae tempora voluptas."
+          "What makes me unique is my wide range of occupational experiences. Each experience has shaped me in some way that has helped me in my future jobs."
         }
         BGColor={"#5252ce"}
         Color={"white"}
-      />
+      ></Card>
       </div>
       <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
     </div>

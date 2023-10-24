@@ -1,53 +1,92 @@
-.CardHolder{
+.CardHolder {
 }
 
-.Card{
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.Card {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.HeaderCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+.HeaderCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
-.CardHolder h1{
-    text-align: center;
+.CardHolder h1 {
+  text-align: center;
 }
 
-.CardHolder p{
-    text-align: left;
-    padding: 10px;
+.CardHolder p {
+  text-align: left;
+  padding: 10px;
 }
 
-.ProfileImage{
-    border: solid;
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
+.ProfileImage {
+  border: solid;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
 }
 
-.CardImage{
-    height: 250px;
-    width: 250px;
+.CardImage {
+  height: 250px;
+  width: 250px;
 }
 
-.skillicon{
-    opacity: 1;
-    height: 60px;
-    width: 60px;
-    margin: 20px;
-    border-radius: 20%;
-    object-fit: contain;
-    transition: 2s;
+.skillicon {
+  opacity: 1;
+  height: 55px;
+  width: 55px;
+  margin: 20px;
+  border-radius: 20%;
+  object-fit: contain;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.skills-container {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+}
+
+@media all and (min-width: 400px) {
+  .skillicon {
+    height: 70px;
+    width: 70px;
   }
-  
-  .skills-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
+
+  .CardHolder h1 {
+    font-size: 45px;
   }
+
+  .CardHolder p {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 948px) {
+  .skillicon {
+    height: 90px;
+    width: 90px;
+  }
+
+  .CardHolder h1 {
+    font-size: 60px;
+  }
+
+  .CardHolder p {
+    font-size: 23px;
+  }
+}
+
+@media all and (min-width: 1598px) {
+    .skillicon:hover{
+        padding: 5px;
+    }
+}

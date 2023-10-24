@@ -18,6 +18,7 @@ function CardHolder() {
   return (
     <div className="CardHolder">
       <ScrollAnimations />
+      <div className="CardAlignment1">
       <HeaderCard />
       <Card
         Title={"Experience"}
@@ -27,6 +28,7 @@ function CardHolder() {
         BGColor={"#5252ce"}
         Color={"white"}
       />
+      </div>
       <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
     </div>
   );

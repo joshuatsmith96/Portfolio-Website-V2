@@ -17,17 +17,20 @@ let iaExp = {name: "Illustrator", text: "Some text for Illustrator"}
 
 let skills = [htmlExp, cssExp, jsExp,pythonExp, reactExp, gitExp, psExp, idExp, iaExp]
 
-
-
-
-
+let previous:any;
 let skillClicked = (e:any) => {
-  let indexOf = e.target.id
-  indexOf = indexOf.charAt(indexOf.length-1)
+  if(previous !== undefined){
+    previous.setAttribute("style", "background-color: initial;")
+  }
+  let indexOf = e.target.id;
+  indexOf = indexOf.charAt(indexOf.length-1);
   indexOf = indexOf - 1;
-  let skillName = skills[indexOf].name
-  let skillText = skills[indexOf].text
-  console.log(skillName, skillText)
+  let skillName = skills[indexOf].name;
+  let skillText = skills[indexOf].text;
+  console.log(skillName, skillText);
+
+  e.target.setAttribute("style", "background-color: #3EC2C4; padding: 10px;");
+  previous = e.target;
 }
 
 function SkillsCard(props: Props) {
@@ -37,7 +40,7 @@ function SkillsCard(props: Props) {
   ));
 
   return (
-    <div className="Card SkillsCard">
+    <div className="Card SkillsCard green">
       <h1>Skills</h1>
       <p className="text-secondary" style={{textAlign:"center"}}>Select A Skill To View Relevant Experience</p>
       <div id="skills-container" className="skills-container">{allIcons}</div>

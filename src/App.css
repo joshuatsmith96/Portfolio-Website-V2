@@ -21,7 +21,7 @@ html{
 }
 
 p{
-  font-size: 16px
+  font-size: 18px
 }
 
 h1{
@@ -99,6 +99,86 @@ h1{
   margin-right: 5px;
 }
 
+.ContactForm{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #2E3047;
+  padding-bottom: 60px;
+}
+
+.ContactForm form{
+  padding: 30px;
+  width: 100%;
+  max-height: 100%;
+  background-color: #2E3047;
+  color: white;
+}
+
+.inputSection{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.inputSection input{
+  padding: 5px;
+}
+
+.inputSection label{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reason{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.reason label{
+  margin-right: 20px; 
+}
+
+#form-information{
+  transition: .2s;
+}
+
+.spinner{
+  display: none;
+}
+
+#form-submit{
+  border: none;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.ContactForm textarea{
+  height: 100px;
+  padding: 10px;
+}
+
+#contact-form h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-form p{
+  text-align: center;
+}
+
+.skills-info-content{
+  height: 100%;
+  transition: 1s;
+}
 /* -------------- HEADER CARD STYLES ---------------- */
 
 

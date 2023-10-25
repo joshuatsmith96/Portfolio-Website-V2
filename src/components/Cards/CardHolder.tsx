@@ -13,6 +13,7 @@ import PhotoshopIcon from '../../assets/Images/Photoshop.png'
 import InDesignIcon from '../../assets/Images/InDesign.png'
 import IllustratorIcon from '../../assets/Images/Illustrator.png'
 import PythonIcon from '../../assets/Images/Python.png'
+import JobsList from './JobsList';
 
 function CardHolder() {
   return (
@@ -29,7 +30,16 @@ function CardHolder() {
         Color={"white"}
       ></Card>
       </div>
+      <JobsList />
       <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
+      <Card
+        Title={"Projects"}
+        Text={
+          "Hmm"
+        }
+        BGColor={"#3EBD9F"}
+        Color={"white"}
+      ></Card>
     </div>
   );
 }

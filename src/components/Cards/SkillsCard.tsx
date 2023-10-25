@@ -58,7 +58,7 @@ let skillClicked = (e: any) => {
   loadInfo(skillName, skillText);
   console.log(skillName, skillText);
 
-  e.target.setAttribute("style", "background-color: #3EC2C4; padding: 10px;");
+  e.target.setAttribute("style", "background-color: #3EC2C4; padding: 10px; border-radius: 100%");
 
   if(e.target.id === "skill5"){
     console.log("CHANGING TO WHITE")
@@ -72,10 +72,6 @@ let skillClicked = (e: any) => {
 };
 
 function SkillsCard(props: Props) {
-  let [skillHeader, setSkillHeader] = useState("Skills");
-  let [skillText, setSkillText] = useState(
-    "Select A Skill To View Relevant Experience"
-  );
   //Mapping All Icons
   const allIcons = props.Icons.map((icon: any, i: number) => (
     <img
@@ -89,14 +85,16 @@ function SkillsCard(props: Props) {
 
   return (
     <div className="Card SkillsCard green">
-      <h1 id="skills-header">{skillHeader}</h1>
+      <div className="skills-info-content">
+      <h1 id="skills-header">Skills</h1>
       <p
         id="skills-text"
         className="text-secondary"
         style={{ textAlign: "center" }}
       >
-        {skillText}
+        Select A Skill To View Relevant Experience
       </p>
+      </div>
       <div id="skills-container" className="skills-container">
         {allIcons}
       </div>

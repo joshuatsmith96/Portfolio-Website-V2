@@ -26,7 +26,7 @@ function Card(props: Props) {
 
   let CardStyle = {
     backgroundColor: props.BGColor,
-    color: props.Color,
+    color: props.Color
   };
 
   let ImageStyle = {

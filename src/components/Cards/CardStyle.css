@@ -5,8 +5,8 @@
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .HeaderCard {
@@ -75,6 +75,39 @@
 #skills-text{
     text-align: center;
     transition: .25s;
+}
+
+.JobsList{
+  padding: 35px;
+  padding-bottom: 50px;
+  background-color: #5252CE;
+}
+
+.CardHolder h3{
+  font-size: 18px;
+}
+
+.job-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.job-info h3{
+  flex: 1;
+}
+
+.job-img{
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.job-text{
+  margin-left: 20px;
 }
 
 @media all and (min-width: 400px) {

@@ -14,9 +14,6 @@ interface Props {
 }
 
 function ProjectCard(props: Props) {
-  let card = document.getElementsByClassName("ProjectCard");
-  console.log(card[3].children[0].children[2].children[1])
-  card[3].children[0].children[2].children[1].setAttribute("style", "display: none;")
 
   return (
     <div className="ProjectCard-Container">

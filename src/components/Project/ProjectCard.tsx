@@ -7,12 +7,17 @@ import GitHub from "../../assets/Images/GitHub.png";
 interface Props {
   Title: string;
   Text: string;
-  viewSiteLink: string;
+  viewSiteLink?: string;
   viewGithubLink: string;
   mainImage: string;
+  id: string;
 }
 
 function ProjectCard(props: Props) {
+  let card = document.getElementsByClassName("ProjectCard");
+  console.log(card[3].children[0].children[2].children[1])
+  card[3].children[0].children[2].children[1].setAttribute("style", "display: none;")
+
   return (
     <div className="ProjectCard-Container">
       <div className="ProjectCard">
@@ -23,7 +28,7 @@ function ProjectCard(props: Props) {
             <Card.Text>{props.Text}</Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroup.Item>
+            <ListGroup.Item id="viewsite">
               <div className="listgroup-item-row">
                 <img src={Preview} alt="" width="25px" height="25px;" />
                 <a href={props.viewSiteLink} target="_blank">

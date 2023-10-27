@@ -1,5 +1,3 @@
-import Collapse from "react-bootstrap/Collapse";
-
 interface Props {
   Title?: String;
   Text?: String;

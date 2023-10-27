@@ -76,7 +76,7 @@ h1{
   width: 100%;
   background-color: #2e3047;
   top: 0px;
-  z-index: 1;
+  z-index: 300;
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -106,7 +106,7 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
   background-color: #2E3047;
   padding-bottom: 60px;
 }
@@ -123,6 +123,7 @@ h1{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .inputSection input{
@@ -134,10 +135,10 @@ h1{
   margin-bottom: 10px;
 }
 
-.reason{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
+
+
+.reason input{
+  margin-right: 3px;
 }
 
 .reason label{
@@ -145,7 +146,11 @@ h1{
 }
 
 #form-information{
-  transition: .2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .spinner{
@@ -159,6 +164,9 @@ h1{
   padding-right: 40px;
   border-radius: 10px;
   font-size: 18px;
+  background-color: #3ebd9f;
+  color: white;
+  font-weight:600;
 }
 
 .ContactForm textarea{
@@ -169,6 +177,7 @@ h1{
 #contact-form h1{
   text-align: center;
   margin-bottom: 20px;
+  color: #b3b3ec;
 }
 
 #contact-form p{
@@ -270,4 +279,11 @@ h1{
   background-color: white;
   transition: 0.5s;
   margin: 20px;
+}
+
+
+@media all and (min-width: 375px) {
+  .reason{
+    display: block;
+  }
 }

@@ -8,13 +8,9 @@ function ScrollAnimations() {
   function doSomething(scrollPos: number) {
     //------------------- NAME SCROLL AFFECTS --------------------------------
     let name = document.getElementById("gradient-name");
+    let headerbar = document.getElementById("headerbar");
     let size = 90 + scrollPos / 5;
     let letterSpacing = 0 + scrollPos;
-
-    if (scrollPos >= 800 && scrollPos <= 801){
-      console.log("We're at 800")
-      
-    }
 
     if (scrollPos <= 180) {
       name?.setAttribute(
@@ -26,6 +22,11 @@ function ScrollAnimations() {
           letterSpacing +
           "px;"
       );
+
+      headerbar?.setAttribute(
+        "style",
+        "opacity: " + (1 - (scrollPos / 800))
+      )
       //------------------- INTRO SCROLL AFFECTS --------------------------------
       let intro = document.getElementById("hero-intro");
       let intro_pos = 100 - scrollPos * 2 + "px";

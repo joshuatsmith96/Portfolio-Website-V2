@@ -3,7 +3,7 @@ interface Props{
     name: string;
     type: string;
     placeholder?: string;
-    id: string;
+    id?: string;
 }
 
 function InputSection(props: Props){

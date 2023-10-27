@@ -1,4 +1,3 @@
-import { useState } from "react";
 import reactwhite from '../../assets/Images/react_WHITE.png';
 import reactregular from '../../assets/react.svg';
 
@@ -58,7 +57,7 @@ let skillClicked = (e: any) => {
   loadInfo(skillName, skillText);
   console.log(skillName, skillText);
 
-  e.target.setAttribute("style", "background-color: #3EC2C4; padding: 10px; border-radius: 100%");
+  e.target.setAttribute("style", "background-color: #3EC2C4; padding: 10px; border-radius: 100%; box-shadow: 1px 1px 5px 1px;");
 
   if(e.target.id === "skill5"){
     console.log("CHANGING TO WHITE")

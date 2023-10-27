@@ -3,6 +3,7 @@ import ScrollAnimations from "../ScrollAnimations";
 import HeaderCard from "./HeaderCard";
 import Card from "./Card";
 import SkillsCard from './SkillsCard';
+import ProjectSection from "../Project/ProjectSection";
 //Image Imports
 import GitHubIcon from '../../assets/Images/GitHub.png'
 import reactIcon from '../../assets/react.svg'
@@ -32,14 +33,7 @@ function CardHolder() {
       </div>
       <JobsList />
       <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
-      <Card
-        Title={"Projects"}
-        Text={
-          "Hmm"
-        }
-        BGColor={"#3EBD9F"}
-        Color={"white"}
-      ></Card>
+      <ProjectSection />
     </div>
   );
 }

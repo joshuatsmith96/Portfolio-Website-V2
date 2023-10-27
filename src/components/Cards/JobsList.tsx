@@ -9,9 +9,9 @@ function JobsList(){
     return(
         <div className="JobsList">
             <Accordion>
-                <Job ID="1" company="Daily Printing" jobtitle='Storefront Developer' jobresponsabilities='stuff' imgpath={DPILogo}/>
-                <Job ID="2" company="AutoZone" jobtitle="Commercial Manager" jobresponsabilities='other stuff' imgpath={AutoZoneLogo}/>
-                <Job ID="3" company="US Army" jobtitle="25Q (Satellite & Radio Tech)" jobresponsabilities='and some more stuff' imgpath={ArmyLogo}/>
+                <Job ID="1" company="Daily Printing" jobtitle='Storefront Developer' jobresponsabilities='Manage and manipulate (as well as add new functionality to) existing storefront templates with HTML, CSS and JavaScript.' imgpath={DPILogo}/>
+                <Job ID="2" company="AutoZone" jobtitle="Commercial Manager" jobresponsabilities='Ensure customers recieved parts in a timely manner. Managerial duties such as de-escalation.' imgpath={AutoZoneLogo}/>
+                <Job ID="3" company="US Army" jobtitle="25Q (Satellite & Radio Tech)" jobresponsabilities="Travel to remote locations and provide voice and data services with military communications equipment. A 'secret' security clearance was given for this job (and I still have it to this day)." imgpath={ArmyLogo}/>
             </Accordion>
         </div>
     )

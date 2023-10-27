@@ -37,8 +37,23 @@ function ContactForm() {
     if (num < inputlength) {
       console.log("Fix unfilled inputs");
     } else if (num === inputlength) {
-      console.log("Run the sendEmail function");
       sendEmail();
+
+      //Remove everything and display a message that "Message Has Been Sent. Thanks!"
+      let form = document.getElementById("contact-form")
+      let button = document.getElementById("form-submit")
+      let msg = document.getElementById("form-complete-msg")
+      let formContainer = document.getElementsByClassName("ContactForm")[0]
+      form!.setAttribute("style", "opacity: 0;")
+      button?.setAttribute("style", "opacity: 0;")
+      setTimeout(() => {
+        form!.setAttribute("style", "visibility: hidden; opacity: 0;")
+        button?.setAttribute("style", "visibility: hidden; opacity: 0;")
+      }, 800);
+      setTimeout(() => {
+        msg?.setAttribute("style", "visibility: visible; opacity: 1;")
+        formContainer.setAttribute("style", "height: 500px;")
+      }, 1600);
     }
   }
 
@@ -65,6 +80,7 @@ function ContactForm() {
   return (
     //Just make sure you use user_name, user_email, and message for names. Also add {form} to the ref and {sendEmail} to form onSubmit
     <div className="ContactForm">
+      <h1 id="form-complete-msg">Form Successfully Submitted! Thanks!</h1>
       <form id="contact-form" ref={form} onSubmit={sendEmail}>
         <h1>Contact Me!</h1>
         <p>

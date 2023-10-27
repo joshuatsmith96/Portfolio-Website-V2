@@ -3,7 +3,6 @@ let ticking = false;
 //Get all icons up here and put them into a 
 
 function ScrollAnimations() {
-  let allIcons = document.getElementsByClassName("skills-container")[0]
   
   function doSomething(scrollPos: number) {
     //------------------- NAME SCROLL AFFECTS --------------------------------

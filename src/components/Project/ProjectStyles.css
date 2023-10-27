@@ -36,7 +36,7 @@
     margin-bottom: 35px;
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 360px) {
     .ProjectCard{
         width: 350px;
         margin-bottom: 35px;

@@ -7,15 +7,15 @@ interface Props {
 
 // List Of Skills
 
-let htmlExp = { name: "HTML Experience", text: "Some text for HTML" };
-let cssExp = { name: "CSS Experience", text: "Some text for CSS" };
-let jsExp = { name: "JavaScript Experience", text: "Some text for JavaScript" };
-let pythonExp = { name: "Python Experience", text: "Some text for Python" };
-let reactExp = { name: "React Experience", text: "Some text for React" };
-let gitExp = { name: "GitHub Experience", text: "Some text for GitHub" };
-let psExp = { name: "Photoshop Experience", text: "Some text for PhotoShop" };
-let idExp = { name: "InDesign Experience", text: "Some text for InDesign" };
-let iaExp = { name: "Illustrator Experience", text: "Some text for Illustrator" };
+let htmlExp = { name: "HTML Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. for Storefront customizations." };
+let cssExp = { name: "CSS Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. for Storefront customizations." };
+let jsExp = { name: "JavaScript Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. Need to give extra functionality such as dropdown options, extra logic, ect." };
+let pythonExp = { name: "Python Experience", text: "1 Year Experience. Made application for Daily Printing that transfers specific color files for our industrial printers." };
+let reactExp = { name: "React Experience", text: "2 Years Experience. The React framework has been used for every version of my Portfolio I've ever made. This time around, my website is made with React & TypesSript, not JavaScript." };
+let gitExp = { name: "GitHub Experience", text: "2 Years Experience with GitHub Desktop. Used for all portfolio projects." };
+let psExp = { name: "Photoshop Experience", text: "1+ Years Experience. Used for creating unique thumbnails for storefront products." };
+let idExp = { name: "InDesign Experience", text: "1+ Years Experience. Used for creating product templates (such as business cards) that would later be used for variable data processing through our storefronts." };
+let iaExp = { name: "Illustrator Experience", text: "1 Year Experience. Used for editing vector art given to me by customers." };
 
 let skills = [
   htmlExp,

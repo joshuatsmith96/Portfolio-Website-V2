@@ -21,7 +21,8 @@ function Job(props: Props) {
         <div className="job-img" style={{backgroundImage: imgurl}}/>
         <div className="job-text">
         <em><b>Company:</b></em> {props.company} <br />
-        <em><b>Job Title:</b></em> {props.jobtitle}
+        <em><b>Job Title:</b></em> {props.jobtitle} <br />
+        <em><b>Responsibilities:</b></em> {props.jobresponsabilities}
         </div>
       </div>
       </Accordion.Body>

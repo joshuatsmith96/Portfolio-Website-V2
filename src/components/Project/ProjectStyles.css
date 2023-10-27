@@ -1,0 +1,44 @@
+.ProjectSection{
+    background-color: #3EBD9F;
+    padding: 10px;
+}
+
+.listgroup-item-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.listgroup-item-row a{
+    text-decoration: none;
+    color: #2E3047;
+    font-weight: 600;
+}
+
+.listgroup-item-row img{
+    margin-right: 10px;
+}
+
+.ProjectCard{
+    width: 250px;
+    margin-bottom: 35px;
+}
+
+.ProjectCard-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectSection h1{
+    margin-bottom: 35px;
+}
+
+@media all and (min-width: 500px) {
+    .ProjectCard{
+        width: 350px;
+        margin-bottom: 35px;
+    }
+}

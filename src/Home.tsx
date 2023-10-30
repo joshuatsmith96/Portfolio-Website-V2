@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import CardHolder from "./components/Cards/CardHolder";
 import CardHolderDesktop from "./components/Cards/CardHolderDesktop";
 import ContactForm from "./components/ContactForm";
+import Footer from './components/Footer';
 
 function Home() {
   return (
@@ -12,7 +13,8 @@ function Home() {
       <Hero />
       <CardHolder />
       <CardHolderDesktop />
-      <ContactForm></ContactForm>
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

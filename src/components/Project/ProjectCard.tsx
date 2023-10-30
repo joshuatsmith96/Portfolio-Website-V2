@@ -18,9 +18,9 @@ function ProjectCard(props: Props) {
   return (
     <div className="ProjectCard-Container">
       <div className="ProjectCard">
-        <Card>
+        <Card style={{border: "none", boxShadow:"1px 1px 6px 1px", color: "gray"}}>
           <Card.Img variant="top" src={props.mainImage} />
-          <Card.Body>
+          <Card.Body style={{color: "black"}}>
             <Card.Title>{props.Title}</Card.Title>
             <Card.Text>{props.Text}</Card.Text>
           </Card.Body>

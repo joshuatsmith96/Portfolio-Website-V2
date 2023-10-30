@@ -70,8 +70,15 @@ let skillClicked = (e: any) => {
     console.log("CHANGING TO WHITE")
     e.target.setAttribute("src", reactwhite)
   } else {
-    let react = document.getElementById("skill5")
-    react?.setAttribute("src", reactregular)
+    if(window.innerWidth < 1200){
+      let reactLogo = document.getElementsByClassName("skillicon")[4];
+      reactLogo?.setAttribute("src", reactregular)
+      console.log(reactLogo)
+      console.log("changed react logo to 'regular'")
+    } else {
+      let reactLogo = document.getElementsByClassName("skills-container")[1].children[4]
+      reactLogo?.setAttribute("src", reactregular)
+    }
   }
 
   previous = e.target;

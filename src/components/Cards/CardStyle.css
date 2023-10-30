@@ -175,7 +175,7 @@
   }
 
   .CardHolder p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .CardHolderDesktop h1 {
@@ -184,6 +184,19 @@
 
   .CardHolderDesktop p {
     font-size: 23px;
+  }
+
+  .desktop-workexperience{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .JobsList{
+    width: 1100px;
   }
 }
 

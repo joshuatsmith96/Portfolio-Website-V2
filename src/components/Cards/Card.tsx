@@ -8,6 +8,7 @@ interface Props {
   Color?: any;
   Img?: any;
   ImgRad?: any;
+  Class?: any;
 }
 
 function Card(props: Props) {
@@ -36,9 +37,15 @@ function Card(props: Props) {
   };
 
   console.log(ImageStyle);
+  let classname: string;
+  if(props.Class !== undefined){
+    classname = "Card " + props.Class
+  } else {
+    classname = "Card"
+  }
 
   return (
-      <div style={CardStyle} className="Card">
+      <div style={CardStyle} className={classname}>
         <div className="ProfileImageContainer">
           <div style={ImageStyle} className="CardImage" />
         </div>

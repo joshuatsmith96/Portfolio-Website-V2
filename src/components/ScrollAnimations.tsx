@@ -7,7 +7,13 @@ function ScrollAnimations() {
     //------------------- NAME SCROLL AFFECTS --------------------------------
     let name = document.getElementById("gradient-name");
     let headerbar = document.getElementById("headerbar");
-    let size = 140 + scrollPos / 5;
+    let nameLocation:any;
+    if (window.innerWidth < 1200){
+      nameLocation = 90;
+    } else {
+      nameLocation = 140;
+    }
+    let size = nameLocation + scrollPos / 5;
     let letterSpacing = 0 + scrollPos;
     let nameOpacity = 1 - (scrollPos / 80);
 

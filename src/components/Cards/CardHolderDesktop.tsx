@@ -34,6 +34,7 @@ function CardHolderDesktop() {
         }
         BGColor={"#5252ce"}
         Color={"white"}
+        Class={"desktop-workexperience"}
       ></Card>
     </div>
   );

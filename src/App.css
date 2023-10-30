@@ -197,6 +197,16 @@ h1{
   transition: .5s;
 }
 
+#contact-form input{
+  border-radius: 7px;
+  border: none;
+}
+
+#contact-form textarea{
+  border-radius: 7px;
+  border: none;
+}
+
 #contact-form h1{
   text-align: center;
   margin-bottom: 20px;
@@ -244,8 +254,12 @@ h1{
   left: 28%;
   background-color: #262666;
 }
-/* -------------- HEADER CARD STYLES ---------------- */
-
+/* -------------- FOOTER STYLES ---------------- */
+.Footer{
+  border: solid;
+  background-color: #262666;
+  height: 20px;
+}
 
 
 /*--------------- GRADIENT HERO TEXT STYLES AND ANIMATION ------------------------*/
@@ -349,6 +363,12 @@ h1{
   }
 }
 
+@media all and (min-width: 1000px){
+  #contact-form{
+    width: 50%;
+  }
+}
+
 @media all and (min-width: 1200px) {
   .Hero {
     height: 600px;
@@ -356,6 +376,7 @@ h1{
 
   .Hero p{
     top: 200px;
+    font-size: 30px;
   }
 
   .gradient-text{

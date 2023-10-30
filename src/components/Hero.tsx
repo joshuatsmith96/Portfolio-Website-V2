@@ -8,7 +8,7 @@ function Hero() {
       <div id="square4" className="square"></div>
       <p id="hero-intro">Hello, I'm</p>
       <h1 className="gradient-text" id="gradient-name">
-        Joshua
+        Joshua <span id="lastname">Smith</span>
       </h1>
     </div>
   );

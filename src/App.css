@@ -59,6 +59,10 @@ h1{
   transition: 1s;
 }
 
+.Hero span{
+  display: none;
+}
+
 
 .Hero p{
   position: absolute;
@@ -369,5 +373,10 @@ h1{
 
   .gradient-text{
     font-size: 140px;
+    white-space: nowrap;
+  }
+
+  .Hero span{
+    display:inline-block;
   }
 }

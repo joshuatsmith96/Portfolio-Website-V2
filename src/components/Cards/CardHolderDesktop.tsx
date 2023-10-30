@@ -26,6 +26,7 @@ function CardHolderDesktop() {
       </div>
       <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
       </div>
+      <ProjectSection />
       <Card
         Title={"Work Experience"}
         Text={
@@ -34,7 +35,6 @@ function CardHolderDesktop() {
         BGColor={"#5252ce"}
         Color={"white"}
       ></Card>
-      <ProjectSection />
     </div>
   );
 }

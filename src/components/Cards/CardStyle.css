@@ -1,6 +1,3 @@
-.CardHolder {
-}
-
 .Card {
   width: 100%;
   padding-left: 10px;
@@ -21,6 +18,15 @@
 }
 
 .CardHolder p {
+  text-align: left;
+  padding: 10px;
+}
+
+.CardHolderDesktop h1 {
+  text-align: center;
+}
+
+.CardHolderDesktop p {
   text-align: left;
   padding: 10px;
 }
@@ -47,7 +53,6 @@
   transition: 0.3s;
   cursor: pointer;
 }
-
 .skills-container {
   position: relative;
   display: grid;
@@ -74,8 +79,11 @@
 }
 
 #skills-text{
-    text-align: center;
     transition: .25s;
+}
+
+#skills-text p{
+  transition: .25s;
 }
 
 .JobsList{
@@ -85,6 +93,10 @@
 }
 
 .CardHolder h3{
+  font-size: 18px;
+}
+
+.CardHolderDesktop h3{
   font-size: 18px;
 }
 
@@ -107,6 +119,10 @@
   margin-left: 20px;
 }
 
+.CardHolderDesktop{
+  display: none;
+}
+
 @media all and (min-width: 400px) {
   .skillicon {
     height: 70px;
@@ -118,6 +134,14 @@
   }
 
   .CardHolder p {
+    font-size: 18px;
+  }
+
+  .CardHolderDesktop h1 {
+    font-size: 45px;
+  }
+
+  .CardHolderDesktop p {
     font-size: 18px;
   }
 }
@@ -135,10 +159,53 @@
   .CardHolder p {
     font-size: 23px;
   }
+
+  .CardHolderDesktop h1 {
+    font-size: 60px;
+  }
+
+  .CardHolderDesktop p {
+    font-size: 23px;
+  }
 }
 
 @media all and (min-width: 1598px) {
   .skillicon:hover {
     padding: 5px;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .CardHolder{
+    display: none;
+  }
+
+  .CardHolderDesktop{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CardAlignment1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .CardAlignment1:first-child{
+    border: solid;
+  }
+
+  .divider-container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .divider{
+    border: solid;
+    height: 400px;
+    color: rgb(224, 224, 224);
+    border-radius: 20px;
   }
 }

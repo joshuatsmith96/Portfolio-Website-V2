@@ -2,6 +2,7 @@ import "./App.css";
 import ScrollAnimations from "./components/ScrollAnimations";
 import Hero from "./components/Hero";
 import CardHolder from "./components/Cards/CardHolder";
+import CardHolderDesktop from "./components/Cards/CardHolderDesktop";
 import ContactForm from "./components/ContactForm";
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
       <ScrollAnimations />
       <Hero />
       <CardHolder />
+      <CardHolderDesktop />
       <ContactForm></ContactForm>
     </div>
   );

@@ -30,8 +30,15 @@ let skills = [
 ];
 
 function loadInfo(header: string, text: string) {
-  let headerElement = document.getElementById("skills-header");
-  let textElement = document.getElementById("skills-text");
+  let headerElement:any;
+  let textElement:any;
+  if (window.innerWidth < 1200) {
+    headerElement = document.getElementsByClassName("skills-header")[0];
+    textElement = document.getElementsByClassName("skills-text")[0];
+  } else {
+    headerElement = document.getElementsByClassName("skills-header")[1];
+    textElement = document.getElementsByClassName("skills-text")[1];
+  }
 
   headerElement?.setAttribute("style", "opacity: 0;");
   textElement?.setAttribute("style", "opacity: 0;");
@@ -85,17 +92,17 @@ function SkillsCard(props: Props) {
   return (
     <div className="Card SkillsCard green">
       <div className="skills-info-content">
-      <h1 id="skills-header">Skills</h1>
+      <h1 id="skills-header" className="skills-header">Skills</h1>
       <p
-        id="skills-text"
-        className="text-secondary"
+      id="skills-text"
+        className="text-secondary skills-text"
         style={{ textAlign: "center" }}
       >
         Select A Skill To View Relevant Experience
       </p>
-      </div>
       <div id="skills-container" className="skills-container">
         {allIcons}
+      </div>
       </div>
     </div>
   );

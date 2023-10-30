@@ -1,3 +1,5 @@
+import JobsList from './JobsList';
+
 interface Props {
   Title?: String;
   Text?: String;
@@ -42,6 +44,7 @@ function Card(props: Props) {
         </div>
         <h1>{props.Title}</h1>
         <p>{props.Text}</p>
+        <JobsList></JobsList>
       </div>
   );
 }

@@ -4,7 +4,6 @@ import HeaderCard from "./HeaderCard";
 import Card from "./Card";
 import SkillsCard from './SkillsCard';
 import ProjectSection from "../Project/ProjectSection";
-import JobsList from './JobsList';
 //Image Imports
 import GitHubIcon from '../../assets/Images/GitHub.png'
 import reactIcon from '../../assets/react.svg'
@@ -16,12 +15,17 @@ import InDesignIcon from '../../assets/Images/InDesign.png'
 import IllustratorIcon from '../../assets/Images/Illustrator.png'
 import PythonIcon from '../../assets/Images/Python.png'
 
-function CardHolder() {
+function CardHolderDesktop() {
   return (
-    <div className="CardHolder">
+    <div className="CardHolderDesktop">
       <ScrollAnimations />
       <div className="CardAlignment1">
       <HeaderCard />
+      <div className="divider-container">
+      <div className="divider"></div>
+      </div>
+      <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
+      </div>
       <Card
         Title={"Work Experience"}
         Text={
@@ -30,11 +34,9 @@ function CardHolder() {
         BGColor={"#5252ce"}
         Color={"white"}
       ></Card>
-      </div>
-      <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
       <ProjectSection />
     </div>
   );
 }
 
-export default CardHolder;
+export default CardHolderDesktop;

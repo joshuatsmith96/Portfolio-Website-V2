@@ -7,11 +7,11 @@ function ScrollAnimations() {
     //------------------- NAME SCROLL AFFECTS --------------------------------
     let name = document.getElementById("gradient-name");
     let headerbar = document.getElementById("headerbar");
-    let size = 90 + scrollPos / 5;
+    let size = 140 + scrollPos / 5;
     let letterSpacing = 0 + scrollPos;
     let nameOpacity = 1 - (scrollPos / 80);
 
-    if (scrollPos <= 300) {
+    if (scrollPos <= 600) {
       name?.setAttribute(
         "style",
         "font-size: " +
@@ -25,7 +25,13 @@ function ScrollAnimations() {
       headerbar?.setAttribute("style", "opacity: " + (1 - scrollPos / 800));
       //------------------- INTRO SCROLL AFFECTS --------------------------------
       let intro = document.getElementById("hero-intro");
-      let intro_pos = 100 - scrollPos * 2 + "px";
+      let intro_pos;
+      if (window.innerWidth < 1200){
+        intro_pos = 100 - scrollPos * 2 + "px";
+      } else {
+        intro_pos = 200 - scrollPos * 2 + "px";
+      }
+      
       intro?.setAttribute("style", "top: " + intro_pos);
 
       //------------------- HERO BACKGROUND SCROLL AFFECTS --------------------------------
@@ -36,10 +42,10 @@ function ScrollAnimations() {
         moveSquare(scrollPos, "3", 26, 10, 3);
         moveSquare(scrollPos, "4", 28, 10, 3.5);
       } else {
-        moveSquare(scrollPos, "1", 0, 85, 5);
-        moveSquare(scrollPos, "2", 0, 82, 4.5);
-        moveSquare(scrollPos, "3", 0, 79, 4);
-        moveSquare(scrollPos, "4", 0, 88, 3.5);
+        moveSquare(scrollPos, "1", 20, 85, 5);
+        moveSquare(scrollPos, "2", 20, 82, 4.5);
+        moveSquare(scrollPos, "3", 20, 79, 4);
+        moveSquare(scrollPos, "4", 20, 88, 3.5);
       }
       
     }

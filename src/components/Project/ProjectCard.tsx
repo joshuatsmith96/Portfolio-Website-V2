@@ -10,7 +10,7 @@ interface Props {
   viewSiteLink?: string;
   viewGithubLink: string;
   mainImage: string;
-  id: string;
+  id?: string;
 }
 
 function ProjectCard(props: Props) {
@@ -26,7 +26,7 @@ function ProjectCard(props: Props) {
           </Card.Body>
           <ListGroup className="list-group-flush">
             <ListGroup.Item id="viewsite">
-              <div className="listgroup-item-row">
+              <div className="listgroup-item-row"  id={props.id}>
                 <img src={Preview} alt="" width="25px" height="25px;" />
                 <a href={props.viewSiteLink} target="_blank">
                   View Site

@@ -261,6 +261,10 @@ h1{
   height: 20px;
 }
 
+#PC4{
+  display: none;
+}
+
 
 /*--------------- GRADIENT HERO TEXT STYLES AND ANIMATION ------------------------*/
 .gradient-text {

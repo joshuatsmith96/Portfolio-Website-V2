@@ -123,6 +123,25 @@
   display: none;
 }
 
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.socials img{
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+#socialtext{
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  text-align: center;
+}
+
 @media all and (min-width: 400px) {
   .skillicon {
     height: 70px;
@@ -224,7 +243,7 @@
   }
 
   .divider-container{
-    height: 700px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;

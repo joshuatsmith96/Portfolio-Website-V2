@@ -9,6 +9,7 @@ function ScrollAnimations() {
     let headerbar = document.getElementById("headerbar");
     let size = 90 + scrollPos / 5;
     let letterSpacing = 0 + scrollPos;
+    let nameOpacity = 1 - (scrollPos / 80);
 
     if (scrollPos <= 300) {
       name?.setAttribute(
@@ -18,7 +19,7 @@ function ScrollAnimations() {
           "px;" +
           " letter-spacing: " +
           letterSpacing +
-          "px;"
+          "px; opacity: "  + nameOpacity
       );
 
       headerbar?.setAttribute("style", "opacity: " + (1 - scrollPos / 800));
@@ -28,25 +29,12 @@ function ScrollAnimations() {
       intro?.setAttribute("style", "top: " + intro_pos);
 
       //------------------- HERO BACKGROUND SCROLL AFFECTS --------------------------------
-      // let square1 = document.getElementById("square1")
-      // let square2 = document.getElementById("square2")
-      // let square3 = document.getElementById("square3")
-      // let opacity = 0 + (scrollPos / 50)
-      // let bottom_positioning1 = 20 - (scrollPos / 6)
-      // let left_positioning1 = 10 - (scrollPos / 6)
-      // let bottom_positioning2 = 40 - (scrollPos / 4)
-      // let left_positioning2 = 20 - (scrollPos / 4)
-      // let bottom_positioning3 = 60 - (scrollPos / 2)
-      // let left_positioning3 = 40 - (scrollPos / 2)
-      // square1?.setAttribute("style", "bottom: " + bottom_positioning1 + "%; left: " + left_positioning1 + "%; opacity: " + opacity + ";")
-      // square2?.setAttribute("style", "bottom: " + bottom_positioning2 + "%; left: " + left_positioning2 + "%; opacity: " + opacity + ";" )
-      // square3?.setAttribute("style", "bottom: " + bottom_positioning3 + "%; left: " + left_positioning3 + "%; opacity: " + opacity + ";")
       //ScrollPos, Square, bottom pos, left pos, speed
       if (window.innerWidth < 960) {
         moveSquare(scrollPos, "1", 20, 10, 2);
         moveSquare(scrollPos, "2", 23, 10, 2.5);
         moveSquare(scrollPos, "3", 26, 10, 3);
-        moveSquare(scrollPos, "4", 20, 10, 3.5);
+        moveSquare(scrollPos, "4", 28, 10, 3.5);
       } else {
         moveSquare(scrollPos, "1", 0, 85, 5);
         moveSquare(scrollPos, "2", 0, 82, 4.5);

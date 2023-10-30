@@ -220,25 +220,25 @@ h1{
 #square1{
   bottom: 0%;
   left: 20%;
-  background-color: #4a4ab9;
+  background-color: #6262ff;
 }
 
 #square2{
   bottom: 0%;
   left: 23%;
-  background-color: #262666;
+  background-color: #4747bb;
 }
 
 #square3{
   bottom: 0;
   left: 26%;
-  background-color: #4a4ab9;
+  background-color: #35358d;
 }
 
 #square4{
   bottom: 0;
-  left: 20%;
-  background-color: #19D7AA;
+  left: 28%;
+  background-color: #262666;
 }
 /* -------------- HEADER CARD STYLES ---------------- */
 

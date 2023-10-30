@@ -207,6 +207,39 @@ h1{
   height: 100%;
   transition: 1s;
 }
+
+.square{
+  position: absolute;
+  height: 50px;
+  width: 1000px;
+  transform: rotate(45deg);
+  transition: .1s;
+  opacity: 0;
+}
+
+#square1{
+  bottom: 0%;
+  left: 20%;
+  background-color: #4a4ab9;
+}
+
+#square2{
+  bottom: 0%;
+  left: 23%;
+  background-color: #262666;
+}
+
+#square3{
+  bottom: 0;
+  left: 26%;
+  background-color: #4a4ab9;
+}
+
+#square4{
+  bottom: 0;
+  left: 20%;
+  background-color: #19D7AA;
+}
 /* -------------- HEADER CARD STYLES ---------------- */
 
 
@@ -284,25 +317,43 @@ h1{
   margin-bottom: 1000px;
 }
 
-/*----------- SHAPES ------------- */
-
-.Square {
-  position: absolute;
-  background-color: white;
-  transition: 0.5s;
-}
-
-.Circle {
-  position: absolute;
-  border-radius: 100%;
-  background-color: white;
-  transition: 0.5s;
-  margin: 20px;
-}
-
-
 @media all and (min-width: 375px) {
   .reason{
     display: block;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .square{
+    position: absolute;
+    height: 50px;
+    width: 1000px;
+    transform: rotate(45deg);
+    transition: .1s;
+    opacity: 1;
+  }
+
+  #square1{
+    bottom: 0%;
+    left: 85%;
+    background-color: #4a4ab9;
+  }
+  
+  #square2{
+    bottom: 0%;
+    left: 82%;
+    background-color: #262666;
+  }
+  
+  #square3{
+    bottom: 0;
+    left: 79%;
+    background-color: #4a4ab9;
+  }
+
+  #square4{
+    bottom: 0;
+    left: 88%;
+    background-color: #19D7AA;
   }
 }

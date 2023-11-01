@@ -8,10 +8,12 @@ function HeaderCard(){
             <div className="ProfileImageContainer">
             <div className="ProfileImage" />
             </div>
+            <div className="visit-social">
             <p>My name is Joshua Smith. I am a Web Developer, and a US Army veteran. I was a student at the Anoka Technical College in Anoka, MN from 2019 to 2021.<br /><br/> I am currently a variable data programmer and website manager for a company called Daily Printing in Plymouth, MN. My favorite hobby is to fly drones and record videos!</p>
             <p id="socialtext">Click icons below to view social media pages</p>
+            </div>
             <div className="socials">
-                <a href=""><img src={LinkedIn} alt="Linked In" /></a>
+                <a href="https://www.linkedin.com/in/joshua-s-90680119b/" target="_blank"><img src={LinkedIn} alt="Linked In" /></a>
                 <a href="https://github.com/joshuatsmith96" target="_blank"><img src={GitHub} alt="Git Hub" /></a>
             </div>
         </div>

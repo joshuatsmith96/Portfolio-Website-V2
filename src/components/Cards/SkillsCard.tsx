@@ -9,7 +9,7 @@ interface Props {
 
 let htmlExp = { name: "HTML Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. for Storefront customizations." };
 let cssExp = { name: "CSS Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. for Storefront customizations." };
-let jsExp = { name: "JavaScript Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. Need to give extra functionality such as dropdown options, extra logic, ect." };
+let jsExp = { name: "JavaScript Experience", text: "3 Years Experience. Used daily for over a year at Daily Printing, Inc. I used JavaScript to manipulate and give functionality to pre-made templates." };
 let pythonExp = { name: "Python Experience", text: "1 Year Experience. Made application for Daily Printing that transfers specific color files for our industrial printers." };
 let reactExp = { name: "React Experience", text: "2 Years Experience. The React framework has been used for every version of my Portfolio I've ever made. This time around, my website is made with React & TypesSript, not JavaScript." };
 let gitExp = { name: "GitHub Experience", text: "2 Years Experience with GitHub Desktop. Used for all portfolio projects." };

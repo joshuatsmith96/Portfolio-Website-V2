@@ -84,7 +84,7 @@ function ContactForm() {
       <form id="contact-form" ref={form} onSubmit={sendEmail}>
         <h1>Contact Me!</h1>
         <p>
-          If you're interested in employing me, have a business proposition, or
+          If you're interested in offering me employment, have feedback, or
           just have a general question, please feel free to send me a message!
         </p>
         <div id="form-information">

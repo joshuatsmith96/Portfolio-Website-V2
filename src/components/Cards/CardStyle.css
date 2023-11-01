@@ -32,10 +32,13 @@
 }
 
 .ProfileImage {
-  border: solid;
   height: 250px;
   width: 250px;
   border-radius: 100%;
+  background-image: url("../../assets/Images/Me.jpg");
+  background-size: contain;
+  box-shadow: 1px 1px 6px 1px;
+  color: rgb(95, 95, 95);
 }
 
 .CardImage {
@@ -213,10 +216,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  .JobsList{
-    width: 1100px;
-  }
 }
 
 @media all and (min-width: 1200px){
@@ -261,5 +260,9 @@
 @media all and (min-width: 1300px){
   .ProjectSectionContainer{
     grid-template-columns: auto auto auto;
+  }
+
+  .JobsList{
+    width: 1100px;
   }
 }

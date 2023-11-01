@@ -139,7 +139,13 @@
   border-radius: 20px;
 }
 
-#socialtext{
+#socialtext-mobile{
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  text-align: center;
+}
+
+#socialtext-desktop{
   color: rgb(27, 27, 27);
   font-weight: bold;
   text-align: center;
@@ -219,6 +225,24 @@
 }
 
 @media all and (min-width: 1200px){
+  #socials-desktop{
+    display: flex;
+    justify-content: center;
+  }
+
+  #socials-desktop a{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #socials-mobile{
+    display: none;
+  }
+
+  #socialtext-mobile{
+    display: none;
+  }
+
   .skillicon:hover {
     padding: 5px;
   }

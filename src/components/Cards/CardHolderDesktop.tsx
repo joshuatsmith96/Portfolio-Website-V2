@@ -14,6 +14,8 @@ import PhotoshopIcon from '../../assets/Images/Photoshop.png'
 import InDesignIcon from '../../assets/Images/InDesign.png'
 import IllustratorIcon from '../../assets/Images/Illustrator.png'
 import PythonIcon from '../../assets/Images/Python.png'
+import LinkedIn from '../../assets/Images/LinkedIn.webp'
+import GitHub from '../../assets/Images/GitHub.png'
 
 function CardHolderDesktop() {
   return (
@@ -26,6 +28,11 @@ function CardHolderDesktop() {
       </div>
       <SkillsCard Icons={[HTMLIcon, CSSIcon, javascriptIcon, PythonIcon, reactIcon, GitHubIcon, PhotoshopIcon, InDesignIcon, IllustratorIcon]}/>
       </div>
+      <p id="socialtext-desktop">Click icons below to view social media pages</p>
+      <div className="socials" id="socials-desktop">
+                <a href="https://www.linkedin.com/in/joshua-s-90680119b/" target="_blank"><img src={LinkedIn} alt="Linked In" /></a>
+                <a href="https://github.com/joshuatsmith96" target="_blank"><img src={GitHub} alt="Git Hub" /></a>
+            </div>
       <ProjectSection />
       <Card
         Title={"Work Experience"}
